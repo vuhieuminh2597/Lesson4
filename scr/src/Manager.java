@@ -8,6 +8,21 @@ public class Manager extends Employee {
         this.assistant = assistant;
     }
 
+    public Manager(double salary, Employee assistant) {
+        super(salary);
+        this.assistant = assistant;
+    }
+
+    public Manager(String name, double salary, Employee assistant) {
+        super(name, salary);
+        this.assistant = assistant;
+    }
+
+    public Manager(String name, String birthDay, double salary, Employee assistant) {
+        super(name, birthDay, salary);
+        this.assistant = assistant;
+    }
+
     public Employee getAssistant() {
         return assistant;
     }
